@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XO_ADVENTRUE_MOD", "XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD.csproj", "{F47E1FE8-D61D-4550-AB81-B53AAE584577}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F47E1FE8-D61D-4550-AB81-B53AAE584577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47E1FE8-D61D-4550-AB81-B53AAE584577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47E1FE8-D61D-4550-AB81-B53AAE584577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47E1FE8-D61D-4550-AB81-B53AAE584577}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E18E26A-3BAE-4C16-98E0-03E752726C68}
+	EndGlobalSection
+EndGlobal

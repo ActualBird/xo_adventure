@@ -1,0 +1,15 @@
+C:\Users\X\Desktop\XO_ADVENTRUE_MOD.exe.config
+C:\Users\X\Desktop\XO_ADVENTRUE_MOD.exe
+C:\Users\X\Desktop\XO_ADVENTRUE_MOD.pdb
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\XO_ADVENTRUE_MOD.csprojAssemblyReference.cache
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\MainWindow.g.cs
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\App.g.cs
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\XO_ADVENTRUE_MOD_MarkupCompile.cache
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\XO_ADVENTRUE_MOD_MarkupCompile.lref
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\MainWindow.baml
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\XO_ADVENTRUE_MOD.g.resources
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\XO_ADVENTRUE_MOD.Properties.Resources.resources
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\XO_ADVENTRUE_MOD.csproj.GenerateResource.cache
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\XO_ADVENTRUE_MOD.csproj.CoreCompileInputs.cache
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\XO_ADVENTRUE_MOD.exe
+E:\GOOGLE_DRIVE____BACKUP\читает_advent\XO_ADVENTRUE_MOD\XO_ADVENTRUE_MOD\obj\Debug\XO_ADVENTRUE_MOD.pdb
