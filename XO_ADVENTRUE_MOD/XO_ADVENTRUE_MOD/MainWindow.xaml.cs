@@ -28,6 +28,7 @@ namespace XO_ADVENTRUE_MOD
         public static int amount = 0;
         public static string FP_game = "";
         public static string FP_chat = "";
+        public static string FP_chat_b = "";
         public static SpeechSynthesizer speech;
         public static int work = 1;  //1 инициализация  /2 есть процесс /-1 пора спать
         public MainWindow()
@@ -35,7 +36,7 @@ namespace XO_ADVENTRUE_MOD
 
             InitializeComponent();
             main = this;
-            this.Title = "xo пробуждение мод v 0.1.2b";
+            this.Title = "XO Adventure мод v 0.1.3b";
             label1.Content = "Поиск процесса crossout";
 
             Thread thread2 =
@@ -54,7 +55,14 @@ namespace XO_ADVENTRUE_MOD
              { IsBackground = true };
             thread3.SetApartmentState(ApartmentState.STA);
             thread3.Start();
-
+            Thread thread31 =
+             new Thread(t =>
+             {
+                 Detect_new_files();
+             })
+             { IsBackground = true };
+      //      thread31.SetApartmentState(ApartmentState.STA);
+            thread31.Start();
             Thread thread =
             new Thread(t =>
             {
@@ -91,7 +99,6 @@ namespace XO_ADVENTRUE_MOD
                 if (!(System.Diagnostics.Process.GetProcessesByName("crossout").Length > 0))
                 {
                     MainWindow.main.Status = "Процесс crossout отключился. Поиск...";
-                    // MainWindow.main.off = "Процесс crossout отключился. Поиск...";
                     work = 1;
                     if (Int32.TryParse(MainWindow.main.rtb_wpf, out int amount))
                     {
@@ -132,6 +139,28 @@ namespace XO_ADVENTRUE_MOD
         {
             get { return ""; }
             set { Dispatcher.Invoke(new Action(() => { try { Application.Current.Shutdown(); } catch { } })); }
+        }
+        public static void Detect_new_files()
+        {
+            string highDir = "";
+            string userName = Environment.UserName;  //юзернейм в винде
+            string path = "C:\\Users\\" + userName + "\\Documents\\My Games\\Crossout\\logs\\";   //папка к логам, буем искать там самую свежую папку кста
+            while (true)
+            {      
+                DateTime lastHigh = new DateTime(1900, 1, 1);
+                foreach (string subdir in Directory.GetDirectories(path))
+                {
+                    DirectoryInfo fi1 = new DirectoryInfo(subdir);
+                    DateTime created = fi1.LastWriteTime;
+                    if (created > lastHigh)
+                    {
+                        highDir = subdir;   
+                        lastHigh = created;
+                    }
+                }
+                FP_chat_b = highDir + "\\chat.log";
+                Thread.Sleep(5000);
+            }
         }
         public static void Negotiate_logs()
         {
@@ -202,19 +231,20 @@ namespace XO_ADVENTRUE_MOD
                 else { Thread.Sleep(500); break; }
             }
             var fileStream = new FileStream(FP_chat, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-            string buffer = FP_chat;
             fileStream.Position = fileStream.Length;
             int rowNum = 0; //число считанных строк
 
             string line;  //считанная строка
-            while (true)  //как грица - не закончил - сосешь хуй
+            while (true) 
             {
 
-                if (buffer != FP_chat)
+                if (FP_chat_b != FP_chat)
                 {
+                    FP_chat = FP_chat_b;
                     fileStream = new FileStream(FP_chat, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
                     fileStream.Position = fileStream.Length;
                     rowNum = 0;
+                    MainWindow.main.Status2 = FP_chat;
                 }
                 if (work == 2)
                 {
